@@ -9,7 +9,7 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
 
 /**
- * Created by Asanka on 12/16/13.
+ * Created by Asanka on 12/16/13.   Modified by jimibi 10/02/14
  */
 public class SmsReceiver extends BroadcastReceiver {
 
@@ -17,8 +17,8 @@ public class SmsReceiver extends BroadcastReceiver {
     private CallbackContext callback_receive;
     private boolean isReceiving=true;
 
-    private boolean broadcast=false;//continue or not the message broadcast to the other broadcast receivers waiting for an incoming SMS
-
+    private boolean broadcast=true;//continue or not the message broadcast to the other broadcast receivers waiting for an incoming SMS
+    // Broadcast On = true
     @Override
     public void onReceive(Context context, Intent intent) {
 
