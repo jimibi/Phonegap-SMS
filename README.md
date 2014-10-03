@@ -15,6 +15,7 @@
 
 ### Usage
 - Broadcast permet de diffuser ou non les sms aux autres applications
+- Séparateur entre Numero et message = '>>'.
 
 #### Installation
 
